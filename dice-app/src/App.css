@@ -1,0 +1,55 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+color: #fff;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container {
+width: 320px;
+background: #1c1f2b;
+padding: 30px 20px;
+border-radius: 15px;
+box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+text-align: center;
+}
+h1, h2, h3, p { margin: 10px 0; }
+input, button {
+width: 85%;
+padding: 10px;
+margin: 10px 0;
+font-size: 16px;
+border-radius: 8px;
+border: none;
+outline: none;
+}
+input {
+background: #2f3242;
+color: #fff;
+}
+input::placeholder { color: #bbb; }
+button {
+background: #00bcd4;
+color: #fff;
+cursor: pointer;
+transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+background: #00acc1;
+transform: scale(1.05);
+}
+.dice-box {
+display: flex;
+justify-content: space-around;
+margin: 20px 0;
+}
+.dice-value {
+font-size: 2.5rem;
+background: #2c3e50;
+border-radius: 12px;
+padding: 20px 30px;
+box-shadow: 0 0 15px #00ffff66;
+}

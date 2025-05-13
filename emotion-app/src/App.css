@@ -1,0 +1,76 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Arial', sans-serif;
+}
+body {
+background-color: #72a55d;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+text-align: center;
+}
+.app {
+background: #fff;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+width: 400px;
+}
+h1 {
+font-size: 1.6rem;
+margin-bottom: 20px;
+color: #333;
+font-weight: bold;
+}
+.emoji-options {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+margin-bottom: 20px;
+}
+.emoji-options button {
+background-color: #a2fb5f;
+border: none;
+padding: 20px;
+font-size: 2rem;
+border-radius: 50%;
+cursor: pointer;
+transition: transform 0.3s ease, background-color 0.3s ease;
+outline: none;
+}
+.emoji-options button:hover {transform: scale(1.2);
+background-color: #09d310;
+}
+/* Mood display */
+.mood-display {
+margin-top: 20px;
+font-size: 1.2rem;
+font-weight: 500;
+color: #333;
+padding: 10px;
+background-color: #f0f8ff;
+border-radius: 8px;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.mood-display p {
+margin: 0;
+}
+.mood-display strong {
+color: #1976d2;
+}
+.mood-display p {
+animation: fadeIn 1s ease-out;
+}
+@keyframes fadeIn {
+0% {
+opacity: 0;
+transform: translateY(-10px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
