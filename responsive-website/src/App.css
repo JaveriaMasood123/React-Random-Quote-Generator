@@ -1,0 +1,143 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+.header {
+background: #fff;
+padding: 1.5rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid #eee;
+}
+.header .logo {
+font-size: 1.8rem;
+font-weight: bold;
+}
+.nav {display: flex;
+gap: 2rem;
+}
+.nav a {
+font-size: 1rem;
+padding: 0.5rem;
+}
+.nav a:hover {
+color: #0055aa;
+border-bottom: 2px solid #0055aa;
+}
+.hero-section {
+background: url('https://i.pinimg.com/736x/ae/6d/c7/ae6dc78efb8c332e22e3d3218565a43d.jpg') center/cover no-repeat;
+color: white;
+padding: 6rem 1rem;
+text-align: center;
+height: 80vh;
+}
+.hero-section h1 {
+font-size: 3rem;
+margin-top: 5rem;
+}
+.hero-section p {
+font-size: 1.2rem;
+margin-top: 1rem;
+}
+.section, .task-input {
+text-align: center;
+padding: 4rem 1rem;
+}
+.card-container {
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin-top: 3rem;
+}
+.card {
+background: #fff;
+padding: 1.5rem;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+width: 300px;
+transition: transform 0.3s ease;
+}
+.card:hover {
+transform: translateY(-5px);
+}
+.card h3 {
+color: #aa0022;
+margin-bottom: 1rem;
+}
+.task-input input, .task-input button {
+padding: 10px;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.task-input input {
+width: 80%;
+}
+.task-input button {
+background: #aa0025;
+color: white;
+cursor: pointer;
+}
+.task-input button:hover {
+background: #820909;
+}
+task-list {
+list-style: none;
+}
+.task {
+display: flex;
+justify-content: space-between;
+padding: 10px;
+border-bottom: 1px solid #eee;
+}
+.task span {
+cursor: pointer;
+}
+.task.completed span {
+    text-decoration: line-through;
+color: #888;
+}
+button {
+background: none;
+border: none;
+color: #d9534f;
+cursor: pointer;
+}
+button:hover {
+color: #c9302c;
+}
+.footer {
+background: #aa0000;
+color: white;
+padding: 2rem 1rem;
+text-align: center;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+.card-container {
+flex-direction: column;
+gap: 1.5rem;
+}
+.card {
+width: 100%;
+}
+.nav {
+flex-direction: column;
+gap: 1rem;
+text-align: center;
+}
+.nav a {
+padding: 0.5rem 0;
+}
+}
